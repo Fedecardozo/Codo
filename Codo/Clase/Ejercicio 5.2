@@ -1,0 +1,60 @@
+Funcion matriz(mat) 
+	
+	Definir  i,j Como Entero;
+	
+	i=0;
+	j=0;
+	
+	Para i = 0 Hasta 3 Hacer
+		
+		Para j = 0 Hasta 3 Hacer
+			
+			mat[i,j] = aleatorio (0,9); 
+			Escribir mat[i,j];
+			
+		FinPara
+		
+	FinPara
+	
+FinFuncion
+
+Funcion c = cont(mat,c)
+	
+	Definir i,j Como Entero;
+	
+	c = 0;
+	i = 0;
+	j = 0;
+	
+	Para i = 0 Hasta 3 Hacer
+		
+		Para j= 0 Hasta 3 Hacer
+			
+			Si mat[i,j] == 0 Entonces
+				
+				c = c + 1;
+				
+			FinSi
+			
+		FinPara
+		
+	FinPara
+	
+FinFuncion
+
+Algoritmo Ejercicio5_2
+	
+	Definir arreglo,contador,c Como Entero;
+	
+	contador=0;
+	c=0;
+	Dimension arreglo[4,4];
+	
+	matriz(arreglo);
+	c = cont(arreglo,contador);
+	
+	
+	
+	Escribir "Cantidad de ceros: ",c;
+	
+FinAlgoritmo
